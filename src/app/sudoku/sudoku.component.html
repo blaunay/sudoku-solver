@@ -1,0 +1,19 @@
+<table>
+    <tr *ngFor="let ligne of grille; index as i; trackBy:trackByFn">
+        <td *ngFor="let cell of ligne; index as j; trackBy:trackByFn">
+            <input selectOnFocus [min]="1" [class.hidden]="+grille[i][j]===0" [maxLength]="1"
+                [(ngModel)]="grille[i][j]">
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <button (click)="reinitialiserGrille()">Réinitialiser</button>
+        <button (click)="resoudreSudoku()">Résoudre</button>
+    </tr>
+</table>
+
+<table>
+    <span *ngIf="estImpossible">Résolution impossible, sudoku incorrect</span>
+</table>

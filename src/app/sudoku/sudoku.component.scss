@@ -1,0 +1,42 @@
+  table {
+    margin:1em auto;
+    border-spacing: 0px;
+  }
+  td {
+    height:30px;
+    width:30px;
+    border:1px solid;
+    text-align:center;
+  }
+  td:first-child {
+    border-left:solid;
+  }
+  td:nth-child(3n) {
+    border-right:solid ;
+  }
+  tr:first-child {
+    border-top:solid;
+  }
+  tr:nth-child(3n) td {
+    border-bottom:solid ;
+  }
+
+  input {
+    border:0;
+    outline:0;
+    text-align: center;
+    width: 30px;
+  }
+
+  input:focus {
+    outline:none!important;
+  }
+
+  .hidden {
+    color: transparent;
+    caret-color: black;
+  }
+
+  .hidden::selection {
+    color: transparent;
+  }
