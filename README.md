@@ -1,5 +1,7 @@
 # SudokuSolver
 
+Résout un sudoku à partir d'une grille saisie par l'utilisateur.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
 ## Development server
